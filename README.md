@@ -1,4 +1,4 @@
-# UWW COMPSCI 424 Program 1 C++ template
+# UWW COMPSCI 424 Program 1 in C++
 
 ## Your notes for me
 
