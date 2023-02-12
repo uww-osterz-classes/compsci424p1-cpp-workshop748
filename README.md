@@ -10,13 +10,9 @@ Use this template for Operating Systems Program 1 in C++.
 
 The included files use a (mostly) typical C++ file structure for a program like this. Feel free to change, add, divide, combine, or delete files; add or combine classes; create more methods; modify the existing methods; and more. Providing correct functionality is more important than having a specific program structure.
 
-The GitHub Classroom autograder will compile and run your code on a Linux virtual machine using the GNU C++ compiler with the following commands.
-```
-g++ -std=c++17 -o cs424p1 *.cpp *.cc *.C
-./cs424p1
-```
+The GitHub Classroom autograder will compile and run your code on a Linux virtual machine using the GNU C++ compiler. You can use all C++ features that are supported by the C++17 standard plus amendments. 
 
-This means that you can use all C++ features that are supported by the C++17 standard plus amendments. If you develop on **washington.uww.edu**, suggested compiler commands are `gcc-5` (C) or `g++-5` (C++).
+If you develop on **washington.uww.edu**, suggested compiler commands are `gcc-5` (C) or `g++-5` (C++).
 
 If you are encountering problems getting your code to pass tests when you push to GitHub Classroom, please [email me](osterz@uww.edu) with a description of what's happening. I will look at your repository on GitHub to try to help you debug.
 
