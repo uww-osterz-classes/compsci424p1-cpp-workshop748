@@ -8,6 +8,8 @@
  
 Use this template for Operating Systems Program 1 in C++.
 
+**Your C++ code files must use the extension `.cpp`**, except header files may use the extension `.h`. The makefile that GitHub Classroom uses to run your code searches only for files with .cpp extensions.
+
 The included files use a (mostly) typical C++ file structure for a program like this. Feel free to change, add, divide, combine, or delete files; add or combine classes; create more methods; modify the existing methods; and more. Providing correct functionality is more important than having a specific program structure.
 
 The GitHub Classroom autograder will compile and run your code on a Linux virtual machine using the GNU C++ compiler. You can use all C++ features that are supported by the C++17 standard plus amendments. 
