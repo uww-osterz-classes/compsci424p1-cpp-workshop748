@@ -44,7 +44,7 @@ auto askNum = [&]()
     std::cout << "you did not enter a number between 0 and 15 please try again";
     }
      }
-   
+   return 0;
 };
 // 1. Ask the user to enter commands of the form "create N", 
 std::vector<uint8_t> createVect;
