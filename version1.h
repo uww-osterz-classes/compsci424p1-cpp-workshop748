@@ -111,6 +111,9 @@ public:  // all methods are normally public
         {
             return -1;
         }
+        if(array[targetPid].parent) {
+            array[targetPid].parent->children.remove(&array[targetPid]);
+        }
         for (PCB* i : array[targetPid].children) {
             int pid = convertToPid(i);
             destroy(pid);

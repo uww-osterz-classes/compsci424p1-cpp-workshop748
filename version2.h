@@ -145,6 +145,13 @@ public:  // all methods are normally public
             }
             delete_value(head);
         }
+        if(array[targetPid].parent != -1) {
+            array[array[targetPid].prev].next = array[targetPid].next;
+            array[array[targetPid].next].prev = array[targetPid].prev;
+            if(array[array[targetPid].parent].firstChild == targetPid) {
+                array[array[targetPid].parent].firstChild = -1;
+            }
+        }
         array[targetPid].next = targetPid;
         array[targetPid].firstChild = -1;
         array[targetPid].prev = targetPid;
