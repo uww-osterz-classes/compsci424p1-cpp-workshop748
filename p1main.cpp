@@ -110,6 +110,7 @@ int main(int argc, char *argv[]) {
         }
         else if (command == "end")
         {
+            
             goto exit;
         }
         else {
