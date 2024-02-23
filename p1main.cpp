@@ -101,11 +101,11 @@ int main(int argc, char *argv[]) {
         if (command == "create")
         {
             createVect.push_back(num << 1);
-            std::cerr<<"**********DEBUG-DELETEME: Create process with parent "<<(int)num<<std::endl;
+            std::cout<<"**********DEBUG-DELETEME: Create process with parent "<<(int)num<<std::endl;
         }
         else if (command == "destroy")
         {
-            std::cerr<<"**********DEBUG-DELETEME: Destroy process with parent "<<(int)num<<std::endl;
+            std::cout<<"**********DEBUG-DELETEME: Destroy process with parent "<<(int)num<<std::endl;
             createVect.push_back((num << 1) | 1);
         }
         else if (command == "end")
@@ -135,7 +135,7 @@ int main(int argc, char *argv[]) {
         // 5. Run the command sequence once with the Version 1 object, 
         //    calling its showProcessTree method after each command to show
         //    the changes in the tree after each command.
-        std::cerr<<"**********DEBUG-DELETEME: V1"<<std::endl;
+        std::cout<<"**********DEBUG-DELETEME: V1"<<std::endl;
         for (auto mobile : createVect) {
             if (mobile & 1)
             {
@@ -147,13 +147,13 @@ int main(int argc, char *argv[]) {
                 v1.create(mobile >> 1);
 
             }
-            std::cerr<<"**********DEBUG-DELETEME: MARK START"<<std::endl;
+            std::cout<<"**********DEBUG-DELETEME: MARK START"<<std::endl;
         
             v1.showProcessInfo();
-            std::cerr<<"**********DEBUG-DELETEME: MARK END"<<std::endl;
+            std::cout<<"**********DEBUG-DELETEME: MARK END"<<std::endl;
         
         }
-        std::cerr<<"**********DEBUG-DELETEME: V2"<<std::endl;
+        std::cout<<"**********DEBUG-DELETEME: V2"<<std::endl;
         
         //v1.showProcessInfo();
         // 6. Repeat step 5, but with the Version 2 object.
@@ -168,13 +168,13 @@ int main(int argc, char *argv[]) {
                 v2.create(mobile >> 1);
 
             }
-            std::cerr<<"**********DEBUG-DELETEME: MARK START"<<std::endl;
+            std::cout<<"**********DEBUG-DELETEME: MARK START"<<std::endl;
         
             v2.showProcessInfo();
-            std::cerr<<"**********DEBUG-DELETEME: MARK END"<<std::endl;
+            std::cout<<"**********DEBUG-DELETEME: MARK END"<<std::endl;
         
         }
-std::cerr<<"**********DEBUG-DELETEME: END"<<std::endl;
+std::cout<<"**********DEBUG-DELETEME: END"<<std::endl;
         
         // 7. Store the current system time in a variable
         auto time = std::chrono::high_resolution_clock::now();
