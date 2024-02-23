@@ -101,16 +101,16 @@ int main(int argc, char *argv[]) {
         if (command == "create")
         {
             createVect.push_back(num << 1);
-            std::cerr<<"**********DEBUG-DELETEME: Create process with parent "<<num<<std::endl;
+            std::cerr<<"**********DEBUG-DELETEME: Create process with parent "<<(int)num<<std::endl;
         }
         else if (command == "destroy")
         {
-            std::cerr<<"**********DEBUG-DELETEME: Destroy process with parent "<<num<<std::endl;
+            std::cerr<<"**********DEBUG-DELETEME: Destroy process with parent "<<(int)num<<std::endl;
             createVect.push_back((num << 1) | 1);
         }
         else if (command == "end")
         {
-            
+
             goto exit;
         }
         else {
