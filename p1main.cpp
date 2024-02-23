@@ -97,12 +97,15 @@ int main(int argc, char *argv[]) {
         auto botanist = me(commando);
         std::string_view command = botanist.command;
         uint8_t num = (uint8_t)botanist.numVale;
+        // failing test case is  p1DestroyNoChildV1
         if (command == "create")
         {
             createVect.push_back(num << 1);
+            std::cerr<<"**********DEBUG-DELETEME: Create process with parent "<<num<<std::endl;
         }
         else if (command == "destroy")
         {
+            std::cerr<<"**********DEBUG-DELETEME: Destroy process with parent "<<num<<std::endl;
             createVect.push_back((num << 1) | 1);
         }
         else if (command == "end")
